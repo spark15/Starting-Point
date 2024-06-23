@@ -1,0 +1,24 @@
+{
+  "name": "start",
+  "packageManager": "yarn@4.3.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "f": "yarn workspace front",
+    "b": "yarn workspace back",
+    "dev": "concurrently \"yarn f dev\" \"yarn b dev\""
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.1.0",
+    "@eslint/js": "^9.5.0",
+    "concurrently": "^8.2.2",
+    "eslint": "9.x",
+    "eslint-plugin-react": "^7.34.3",
+    "globals": "^15.6.0",
+    "prettier": "^3.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^7.13.1"
+  }
+}
